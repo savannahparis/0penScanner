@@ -1,0 +1,7 @@
+<div id="acountInfos">
+    <?php 
+    	// accès directement à la colonne
+    ?>
+	<p><?php echo $this->translate('account_infos_connected_as', Zend_Auth::getInstance()->getIdentity()->user_name)?></p>
+	<p><a href="<?php echo $this->url(array(), 'logout') ?>"><?php echo $this->translate('menu_logout')?></a></p>
+</div>
